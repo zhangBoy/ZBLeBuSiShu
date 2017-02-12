@@ -8,8 +8,7 @@
 
 #import "ZBTabBar.h"
 #import "ZBPublishViewController.h"
-#import "ZBPostWordViewController.h"
-#import "ZBNavigationController.h"
+
 
 @interface ZBTabBar()
 /**
@@ -36,15 +35,8 @@
 
 - (void)publishClick
 {
-//    ZBPublishViewController *publishVC = [[ZBPublishViewController alloc] init];
-//    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:nil];
-    
-    ZBPostWordViewController *postWord = [[ZBPostWordViewController alloc] init];
-    ZBNavigationController *nav = [[ZBNavigationController alloc] initWithRootViewController:postWord];
-    
-    //这里不能用self弹出控制器，因为self执行了dismiss操作
-    UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
-    [root presentViewController:nav animated:YES completion:nil];
+    ZBPublishViewController *publishVC = [[ZBPublishViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:nil];
 }
 
 -(void)layoutSubviews
@@ -79,8 +71,7 @@
         // 增加索引
         index++;
     }
-    
-    
+        
 }
 
 @end
