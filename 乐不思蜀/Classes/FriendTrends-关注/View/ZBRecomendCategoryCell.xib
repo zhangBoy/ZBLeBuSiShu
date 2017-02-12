@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="category" id="KGk-i7-Jjw" customClass="ZBRecomendCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6N-6b-PK5" userLabel="底部的分割线">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Qum-ts-wrV"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6a-xh-1Xh" userLabel="选中时显示的控件">
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="rYh-eD-wXO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="s6N-6b-PK5" secondAttribute="bottom" id="PE9-Oo-Jg7"/>
+                    <constraint firstItem="s6N-6b-PK5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QmU-dV-G3w"/>
+                    <constraint firstAttribute="trailing" secondItem="s6N-6b-PK5" secondAttribute="trailing" id="XcV-eH-cMp"/>
+                    <constraint firstItem="s6N-6b-PK5" firstAttribute="top" secondItem="J6a-xh-1Xh" secondAttribute="bottom" id="w0n-Yj-hSU"/>
+                    <constraint firstItem="J6a-xh-1Xh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ybS-dB-Mcq"/>
+                    <constraint firstItem="J6a-xh-1Xh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="z8z-0q-YNP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectedIndicator" destination="J6a-xh-1Xh" id="VNN-XZ-hJo"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

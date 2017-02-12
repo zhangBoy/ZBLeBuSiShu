@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="user" rowHeight="112" id="KGk-i7-Jjw" customClass="ZBRecomendUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CTC-gd-4U3" userLabel="Header Image View">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="2qV-Pc-66F"/>
+                            <constraint firstAttribute="height" constant="50" id="ddH-nT-5wT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vye-Tp-EBS" userLabel="Screen Name Label">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciZ-4d-FRV" userLabel="Fans Count Label">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2O-NC-rPT" userLabel="分割线">
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="B2w-EY-P8t"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAm-Kk-OgG">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="OSQ-oL-du0"/>
+                            <constraint firstAttribute="height" constant="25" id="yNO-q1-sbN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="+关注" backgroundImage="FollowBtnBg">
+                            <color key="titleColor" red="1" green="0.1176470588" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="FollowBtnClickBg">
+                            <color key="titleColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="CAm-Kk-OgG" secondAttribute="trailing" constant="20" id="7a2-aZ-SsN"/>
+                    <constraint firstItem="Vye-Tp-EBS" firstAttribute="top" secondItem="CTC-gd-4U3" secondAttribute="top" id="8Pc-Ae-MUD"/>
+                    <constraint firstAttribute="trailing" secondItem="G2O-NC-rPT" secondAttribute="trailing" id="9AE-Gz-qPP"/>
+                    <constraint firstAttribute="bottom" secondItem="G2O-NC-rPT" secondAttribute="bottom" id="Amu-4s-Ba7"/>
+                    <constraint firstItem="G2O-NC-rPT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DB3-iI-RH4"/>
+                    <constraint firstItem="CTC-gd-4U3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Okk-C3-ShS"/>
+                    <constraint firstItem="Vye-Tp-EBS" firstAttribute="leading" secondItem="CTC-gd-4U3" secondAttribute="trailing" constant="10" id="Z7o-89-uZe"/>
+                    <constraint firstItem="ciZ-4d-FRV" firstAttribute="leading" secondItem="Vye-Tp-EBS" secondAttribute="leading" id="fq4-dw-Pzg"/>
+                    <constraint firstItem="CAm-Kk-OgG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lVM-K4-rou"/>
+                    <constraint firstItem="CTC-gd-4U3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uSW-jU-Ig3"/>
+                    <constraint firstItem="ciZ-4d-FRV" firstAttribute="bottom" secondItem="CTC-gd-4U3" secondAttribute="bottom" id="zaz-Hk-O0I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fansCountLabel" destination="ciZ-4d-FRV" id="De1-lk-aKS"/>
+                <outlet property="headerImageView" destination="CTC-gd-4U3" id="i6C-EU-WBm"/>
+                <outlet property="screenNameLabel" destination="Vye-Tp-EBS" id="JqL-av-UPR"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="71"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FollowBtnBg" width="51" height="25"/>
+        <image name="FollowBtnClickBg" width="51" height="25"/>
+    </resources>
+</document>

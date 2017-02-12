@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  乐不思蜀
+//
+//  Created by 曹桉铭 on 16/9/27.
+//  Copyright © 2016年 乐基. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+ZBExtension.h"
+#import "UIBarButtonItem+ZBExtension.h"
+#import "ZBConst.h"
+#import "NSDate+ZBExtension.h"
+#import "UIImage+ZBExtension.h"
+#import "UIImageView+ZBExtension.h"
+
+#define ZBNoteCenter [NSNotificationCenter defaultCenter]
+
+#ifdef DEBUG
+#define ZBLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZBLog(...)
+#endif
+
+#define ZBLogFunc ZBLog(@"%s",__func__)
+
+#define ZBRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
+
+#define ZBGlobalBg ZBRGBColor(223,223,223)
+#define ZBTagBg ZBRGBColor(74, 139, 209)
+
+#define ZBTagFont [UIFont systemFontOfSize:14]
+
+#define ZBScreenW [UIScreen mainScreen].bounds.size.width
+#define ZBScreenH [UIScreen mainScreen].bounds.size.height
+
+#endif /* PrefixHeader_pch */
